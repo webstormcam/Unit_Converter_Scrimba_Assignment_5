@@ -20,6 +20,7 @@ h1{
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     color: #ffffff;
+    text-align: center;
 }
 
 #amount-section{
@@ -61,4 +62,19 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.convert-output{
+    background-color: #273549;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+h2{
+ color: #CCC1FF;
+ font-family: 'Inter', sans-serif;
+ font-weight: 600;
 }
