@@ -3,6 +3,11 @@
     
 }
 
+html{
+    height: 100vh;
+    background: #1F2937;
+}
+
 #top{
     background-color: #6943FF;
     
