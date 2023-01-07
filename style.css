@@ -69,6 +69,14 @@ h1{
     align-items: center;
 }
 
+.calculation-section{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+}
+
 .convert-output{
     background-color: #273549;
     width: 100%;
@@ -82,4 +90,9 @@ h2{
  color: #CCC1FF;
  font-family: 'Inter', sans-serif;
  font-weight: 600;
+}
+
+.divider{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
