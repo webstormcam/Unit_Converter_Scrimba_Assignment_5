@@ -17,8 +17,8 @@ convert.addEventListener('click',function(){
         inputValue[i].innerHTML=inputted.value;
     }
 
-    MetersToFeet(inputted)
-    FeetToMeters(inputted)
+    metersToFeet(inputted)
+    feetToMeters(inputted)
     litersToGallons(inputted)
     gallonstoLiters(inputted)
     kilosToPounds(inputted)
@@ -27,33 +27,32 @@ convert.addEventListener('click',function(){
 })
 
 
-function MetersToFeet(value){
-let newNum= value.value*3.281
+function metersToFeet(value){
+let newNum= value.value*3.2808
 newNum= newNum.toFixed(3)
 feet.innerHTML=newNum
-
 }
 
-function FeetToMeters(value){
-    const newNum = value.value/3.281
+function feetToMeters(value){
+    const newNum = value.value/3.2808
     meter.innerHTML=newNum.toFixed(3)
 }
 
 function litersToGallons(value){
-    const newNum = value.value*0.264
+    const newNum = value.value*0.264172
     gallons.innerHTML=newNum.toFixed(3)
 }
 function gallonstoLiters(value){
-    const newNum = value.value/0.264
+    const newNum = value.value/0.264172
     liters.innerHTML=newNum.toFixed(3)
 }
 
 function kilosToPounds(value){
-    const newNum= value.value*2.204
+    const newNum= value.value*2.20462
     kilos.innerHTML=newNum.toFixed(3)
 }
 
 function poundsToKilos(value){
-    const newNum = value.value/2.204
+    const newNum = value.value/2.20462
     pounds.innerHTML=newNum.toFixed(3)
 }
