@@ -28,9 +28,8 @@ convert.addEventListener('click',function(){
 
 
 function metersToFeet(value){
-let newNum= value.value*3.2808
-newNum= newNum.toFixed(3)
-feet.innerHTML=newNum
+const newNum= value.value*3.2808
+feet.innerHTML=newNum.toFixed(3)
 }
 
 function feetToMeters(value){
