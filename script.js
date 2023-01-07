@@ -6,6 +6,8 @@ const feet = document.getElementById('feet')
 const meter = document.getElementById('meters')
 const liters = document.getElementById('liters')
 const gallons = document.getElementById('gallons')
+const kilos = document.getElementById('kilos')
+const pounds = document.getElementById('pounds')
 
 convert.addEventListener('click',function(){
     if(inputted.value===""){
@@ -19,6 +21,8 @@ convert.addEventListener('click',function(){
     FeetToMeters(inputted)
     litersToGallons(inputted)
     gallonstoLiters(inputted)
+    kilosToPounds(inputted)
+    poundsToKilos(inputted)
     
 })
 
@@ -42,4 +46,14 @@ function litersToGallons(value){
 function gallonstoLiters(value){
     const newNum = value.value/0.264
     liters.innerHTML=newNum.toFixed(3)
+}
+
+function kilosToPounds(value){
+    const newNum= value.value*2.204
+    kilos.innerHTML=newNum.toFixed(3)
+}
+
+function poundsToKilos(value){
+    const newNum = value.value/2.204
+    pounds.innerHTML=newNum.toFixed(3)
 }
